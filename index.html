@@ -23,30 +23,33 @@
       <div class="right">
          <div class="game">
             <div class="header">
-               <div class="player-x">
+               <div class="player-x active">
                   <span>Player X</span>
                </div>
-               <div class="player-o">
+               <div class="player-o active">
                   <span>Player O</span>
                </div>
             </div>
 
             <div class="board">
-               <div class="board-tile">X</div>
-               <div class="board-tile">O</div>
-               <div class="board-tile">X</div>
-               <div class="board-tile">O</div>
-               <div class="board-tile">X</div>
-               <div class="board-tile">O</div>
-               <div class="board-tile">X</div>
-               <div class="board-tile">O</div>
-               <div class="board-tile">O</div>
+               <!-- data-index: custom attr : use in GameView-->
+               <div class="board-tile" data-index="0"> </div>
+               <div class="board-tile" data-index="1"> </div>
+               <div class="board-tile" data-index="2"> </div>
+               <div class="board-tile" data-index="3"> </div>
+               <div class="board-tile" data-index="4"> </div>
+               <div class="board-tile" data-index="5"> </div>
+               <div class="board-tile" data-index="6"> </div>
+               <div class="board-tile" data-index="7"> </div>
+               <div class="board-tile" data-index="8"> </div>
             </div>
 
          </div>
       </div>
 
    </div>
+   <!-- type="module" allows main.js to import Game class -->
+   <script src="./js/main.js" type="module"></script>
    
 </body>
 </html>

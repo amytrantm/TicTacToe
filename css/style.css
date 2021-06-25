@@ -5,16 +5,21 @@
 
 body {
    font-family: "Merriweather Sans", sans-serif;
-   color: rgb(44, 79, 220)
+   color: rgb(44, 79, 220);
+   background-color: rgb(214, 243, 245);
 }
+
+.title{
+   max-width: 500px;
+}
+
 
 .wrapper {
    max-width: 1440px;
    height: 800px;
-   background-color: rgb(214, 243, 245);
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
    margin: 0 auto;
 }
 
@@ -57,12 +62,26 @@ h1 {
 .header .player-x {
    flex: 1;
    border-bottom: 3px solid;
+   padding-bottom: 8px; 
 }
+
+.player-x.active {
+   color: #42BED7;
+   border: #42BED7;
+}
+
 
 .header .player-o{
    flex: 1;
    border-bottom: 3px solid;
+   padding-bottom: 8px; 
 }
+
+.player-o.active {
+   color: #D7BAFB;
+   border: #D7BAFB;
+}
+
 
 /* create board */
 .board {
@@ -98,3 +117,24 @@ h1 {
    border-bottom: 3px solid rgb(192, 201, 237)
 }
 
+.tile-x {
+   color: #42BED7;
+}
+
+.tile-o {
+   color: #D7BAFB;
+}
+
+.tile-winner span {
+   color: rgb(26, 146, 26);
+}
+
+@media only screen and (max-width : 1200px) {
+   .wrapper {
+      flex-direction: column;
+   }
+   .left {
+      margin-bottom: 50px;
+   }
+}
+   
