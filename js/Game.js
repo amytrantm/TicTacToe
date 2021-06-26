@@ -12,17 +12,16 @@
       }
    }
 
+   isTileFilled(i) {
+      return this.board[i]
+   }
+
    makeMove(i) {
       //check if there's no more move/ endOfGame -> can't make any more move
       if (this.endOfGame()) {
          return
       }
 
-
-      //if there's value in the tile,
-      if (this.board[i]) {
-         return
-      }
       //else
       this.board[i] = this.turn; // X or O
 
@@ -52,6 +51,12 @@
       return null
    }
 
+   isBoardFull(){
+      for (const tile of this.board) {
+         if (tile === null) return false
+      }
+      return true
+   }
    //end game when there is winning combination:
    endOfGame() {
       const winningCombination = this.findWinningCombinations()

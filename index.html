@@ -6,13 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Tic Tac Toe</title>
    <link rel="stylesheet" href="./css/style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&amp;display=swap" rel="stylesheet">
 </head>
 <body>
    <div class="wrapper">
       <div class="left">
          <div class="title">
             <h1>
-               Let's play <br>
+               Let's play
                the Tic-tac-toe Game!
             </h1>
             <button class="restart"> Start a New Game</button>
@@ -26,7 +27,7 @@
                <div class="player-x active">
                   <span>Player X</span>
                </div>
-               <div class="player-o active">
+               <div class="player-o">
                   <span>Player O</span>
                </div>
             </div>
@@ -47,6 +48,9 @@
          </div>
       </div>
 
+   </div>
+   <div class='announcement'>
+      <h4 class='winner-announcement'></h4>
    </div>
    <!-- type="module" allows main.js to import Game class -->
    <script src="./js/main.js" type="module"></script>

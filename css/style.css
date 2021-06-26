@@ -4,9 +4,10 @@
 }
 
 body {
-   font-family: "Merriweather Sans", sans-serif;
+   font-family: "Nunito", sans-serif;
    color: rgb(44, 79, 220);
    background-color: rgb(214, 243, 245);
+   padding: 30px;
 }
 
 .title{
@@ -16,22 +17,22 @@ body {
 
 .wrapper {
    max-width: 1440px;
-   height: 800px;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
    margin: 0 auto;
 }
 
 h1 {
-   font-size: 70px;
-   font-weight: bold;
+   font-size: 80px;
+   font-weight: 900;
 }
 
 .restart {
    /* background-color: pink; */
-   width: 175px;
-   height: 50px;
+   width: 270px;
+   height: 60px;
+   font-size: 24px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -55,31 +56,32 @@ h1 {
 
 .header {
    display: flex;
-   color: pink;
-   font-size: 24px;
+   color: rgb(25, 8, 216);
+   font-size: 35px;
 }
 
 .header .player-x {
    flex: 1;
-   border-bottom: 3px solid;
    padding-bottom: 8px; 
 }
 
 .player-x.active {
-   color: #42BED7;
-   border: #42BED7;
+   color: #107871;
+   border: #107871;
+   border-bottom: 3px solid;
 }
 
 
 .header .player-o{
    flex: 1;
-   border-bottom: 3px solid;
    padding-bottom: 8px; 
+   /* line under player X or player O */
 }
 
 .player-o.active {
-   color: #D7BAFB;
-   border: #D7BAFB;
+   color: #98118d;
+   border: #98118d;
+   border-bottom: 3px solid;
 }
 
 
@@ -100,7 +102,8 @@ h1 {
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 80px;
+   font-size: 100px;
+   font-weight: 900 ;
    background: white;
    cursor: pointer;
 }
@@ -118,15 +121,23 @@ h1 {
 }
 
 .tile-x {
-   color: #42BED7;
+   color: #107871;;
 }
 
 .tile-o {
-   color: #D7BAFB;
+   color: #98118d;;
 }
 
-.tile-winner span {
-   color: rgb(26, 146, 26);
+.tile-winner {
+   background-color: greenyellow;
+}
+
+.announcement {
+   max-width: 1440px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   margin: 0 auto; 
 }
 
 @media only screen and (max-width : 1200px) {

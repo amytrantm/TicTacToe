@@ -2,7 +2,7 @@ import Game from "./Game.js"
 import GameView from "./GameView.js"
 
 let game = new Game()
-let gameView = new GameView()
+let gameView = new GameView(game)
 
 //start a new game button
 document.querySelector(".restart").addEventListener("click", () => { onRestartClick()})
@@ -17,21 +17,14 @@ tiles.forEach( tile => {
 })
 
 //i = index
-function onTileClick(i) {
-   //make move
-   game.makeMove(i)
-   
-   //update board
-   gameView.updateBoard(game)
-
-   //change turn
-   game.nextTurn()
+function onTileClick(i) { 
+   gameView.onMove(i)   
 }
 
 function onRestartClick() {
    //reset board
    game = new Game()
-   gameView.updateBoard(game)
+   gameView.clearBoard(game)
 }
 
 
