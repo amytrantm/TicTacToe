@@ -1,5 +1,7 @@
 <h1 align="center"> Let's play a Tic Tac Toe game! </h1>
 
-[![](https://giphy.com/embed/RBZDKcCQxS5eHcInm5)](https://giphy.com/embed/RBZDKcCQxS5eHcInm5)
+![Tic Tac Toe Game](https://media.giphy.com/media/RBZDKcCQxS5eHcInm5/giphy.gif)
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+  
 
-<a href="https://amytrantm.github.io/TicTacToe"> <button> Play Game </button> <a/> 
+<a href="https://amytrantm.github.io/TicTacToe">Play Game</a> 
